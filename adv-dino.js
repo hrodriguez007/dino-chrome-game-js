@@ -141,6 +141,13 @@ function update() {
     context.font = "20px courier"
     score++;
     context.fillText(score, 15, 30); //15 from left, 30 from top
+
+    //text on canvas when gameover
+    if (gameOver) {
+        context.fillStyle = "red";
+        context.font = "35px bold"
+        context.fillText("GAME OVER" , 300, 90); //x-axis positon of 5, y-axis of 90
+    }
 };
 
 //press to start game
